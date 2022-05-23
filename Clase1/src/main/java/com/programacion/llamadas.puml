@@ -3,9 +3,11 @@
 
 autonumber
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+Principal -> TransaccionBancaria: realizarTransferencia()
+TransaccionBancaria --> ManejadorPersistecniaLogImpl: buscarCuenta()
+ManejadorPersistecniaLogImpl --> ManejadorPersistecniaImpl: buscarCuenta()
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+ManejadorPersistecniaLogImpl <-- ManejadorPersistecniaImpl
+TransaccionBancaria <-- ManejadorPersistecniaLogImpl
+Principal <-- TransaccionBancaria
 @enduml
