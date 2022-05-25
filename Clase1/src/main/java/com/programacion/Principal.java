@@ -8,7 +8,7 @@ public class Principal {
         //delegamos la creacion de la dependencia
         ManejadorPersistencia mp= new ManejadorPersistenciaXyzImpl();
         tb.setManejadorPersistencia(mp);
-
+        //prueba1
 
         tb.realizarTransferencia("001", "002", 10.0f);
 
