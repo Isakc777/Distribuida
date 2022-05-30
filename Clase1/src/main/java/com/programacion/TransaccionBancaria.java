@@ -16,7 +16,7 @@ public class TransaccionBancaria {
 
     //public TransaccionBancaria(){
         //implementacion inicial
-        //manejadorPersistencia = new ManejadorPersistenciaImpl();
+        //manejadorPersistencia = new ManejadorPersistenciaImpl(); // eso no es DI ni lookup por que esta creando la dependecia directa
 
         //mediante el uso de interfaz podemos hacer distintas implementaciones
         //manejadorPersistencia = new ManjeadorPersistenciaNosqlImpl();
